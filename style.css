@@ -1,0 +1,83 @@
+:root{
+    --Blue-600: hsl(185, 75%, 39%);
+    --Navy-950: hsl(229, 23%, 23%);
+    --Gray-500: hsl(227, 10%, 46%);
+    --Gray-500-alpha: hsla(227, 10%, 46%, 0.219);
+    --Gray-100: hsl(225, 10%, 92%);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans',sans-serif;
+    background:url(./images/bg-pattern-top.svg)  no-repeat,url(./images/bg-pattern-bottom.svg) bottom right no-repeat;
+    background-color: var(--Blue-600); 
+    background-position:top -500px left -300px , bottom -540px right -340px ; 
+    display: grid;
+    place-content: center;
+}
+
+main{
+    background: url(./images/bg-pattern-card.svg) no-repeat,var(--Gray-100);
+    background-size: 100% 40%,auto;
+    background-position: top; 
+    color: var(--Navy-950); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem; 
+    margin: 10em 0;
+    box-shadow: 2px 4px 30px ;
+}
+
+img{
+    border: 5px solid var(--Gray-100);
+    border-radius: 50%;
+    margin-top: 7em;
+}
+
+h1{
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-top: 1.2em;
+}
+
+h1 span{
+    color: var(--Gray-500);
+    font-weight: 400;
+    margin-left: 0.5em;
+}
+
+p{
+    color: var(--Gray-500);
+    margin-top: 0.6em;
+}
+
+.status{
+    display: flex;
+    gap: 5rem;
+    border-top: 0.1px solid var(--Gray-500-alpha);
+    padding: 1.5em 4em;
+    margin-top: 1.5em;
+}
+
+.status>div{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.status>div :first-child{
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.status>div :last-child{
+    color: var(--Gray-500);
+}

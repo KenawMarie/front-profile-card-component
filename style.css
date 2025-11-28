@@ -81,3 +81,10 @@ p{
 .status>div :last-child{
     color: var(--Gray-500);
 }
+
+@media screen and (max-width:568px) {
+    .status{
+        gap: 2rem;
+        padding: 1.5em 2em;
+    }
+}
